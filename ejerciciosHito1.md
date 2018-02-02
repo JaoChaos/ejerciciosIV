@@ -8,7 +8,7 @@ Según el enunciado del ejercicio, suponiendo que se trata de una sustitución d
 
 Yo he utilizado el siguiente [servidor](https://www.pccomponentes.com/hp-proliant-microserver-gen10-amd-opteron-x3216-8gb) de la página de PCcomponentes. Su coste sin IVA es de 214,05€.
 
-Amortización a 4 años: 
+Amortización a 4 años:
 Cuota de amortización: 53,51€.
 
 | Año	| Amort. Acumulada	| Valor	|
@@ -64,11 +64,26 @@ Como se observa, sale más rentable contratar los servicios por hora cuando se u
 
 ## Ejercicio 3:En general, cualquier ordenador con menos de 5 o 6 años tendrá estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden? Si usas una máquina virtual, ¿qué resultado da? ¿Y en una Raspberry Pi o, si tienes acceso, el procesador del móvil?
 
-Ejecuto la orden cat /proc/cpuinfo:
+Ejecuto la orden cat /proc/cpuinfo, y la salida del comando me indica que mi pc posee un Intel(R) Core(TM) i5-4200H CPU @ 2.80GHz
 
-[img1]
-[img2]
-[img3]
+##Ejercicio 4:
+## 1. Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
 
+Primero, instalamos cpu-checker para poder ejecutar la orden.
+Al usar kvm-ok, la salida del comando es la siguiente:
+```sh
+INFO: /dev/kvm exists
+KVM acceleration can be used
+```
 
+Después, necesitamos instalar un hipervisor para gestionar máquinas virtuales, pero en mi caso ya tengo instalado VirtualBox de asignaturas anteriores.
 
+##Ejercicio 5:Darse de alta en servicios de nube usando ofertas gratuitas o cupones que pueda proporcionar el profesor.
+
+En mi caso, el profesor me ha proporcionado un código del servicio de almacenamiento basado en la nube de Microsoft, [Azure](https://azure.microsoft.com/en-us/).
+Para canjear el cupón proporcionado nos dirigimos a la siguiente [página](https://www.microsoftazurepass.com/
+) y lo introducimos, así de sencillo.
+
+##Ejercicio 6: Darse de alta en una web que permita hacer pruebas con alguno de los sistemas de gestión de nube anteriores.
+
+Nos dirijimos a la página de [Azure DevTest Labs](https://azure.microsoft.com/en-us/services/devtest-lab/), y continuamos como Free User. Se nos redirigirá al portal de Azure del ejercicio anterior, donde podemos crear los test que necesitemos.
